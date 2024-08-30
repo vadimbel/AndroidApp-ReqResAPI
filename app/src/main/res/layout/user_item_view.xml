@@ -1,0 +1,158 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/light_purple"
+    app:cardCornerRadius="8dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_purple">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="117dp"
+            android:layout_height="213dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/avatar_image_description"
+            android:focusable="true"
+            android:tooltipText="Use to modify user image" />
+
+        <LinearLayout
+            android:id="@+id/textFieldsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageview"
+            android:orientation="vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentTop="true">
+
+            <!-- TextInputLayout for ID -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="ID"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/id" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TextInputLayout for First Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="First Name"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TextInputLayout for Last Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="Last Name"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TextInputLayout for Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="Email"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/email" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textFieldsLayout"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Update Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Update"
+                android:textSize="12sp"
+                android:tooltipText="Use to update user" />
+
+            <!-- Delete Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Delete"
+                android:textSize="12sp"
+                android:tooltipText="Use to delete user" />
+
+            <!-- Refresh Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRefresh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Refresh"
+                android:textSize="12sp"
+                android:tooltipText="Use to refresh user details" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/buttonLayout"
+            android:layout_marginTop="0dp"
+            android:background="@color/black" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+
