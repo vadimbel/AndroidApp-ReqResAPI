@@ -15,7 +15,7 @@ Android app built with MVVM architecture, integrating the ReqRes API via Retrofi
 ### Steps to Build and Run
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/vadimbel/ReqResAPI-AndroidApp.git
+   git clone https://github.com/vadimbel/AndroidApp-ReqResAPI.git
 
 2. Open the Project:
    - Launch Android Studio.
